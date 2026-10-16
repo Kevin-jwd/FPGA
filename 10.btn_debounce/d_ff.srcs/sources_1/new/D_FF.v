@@ -7,7 +7,6 @@ module D_FF (
     output reg q
 );
 
-
   always @(posedge o_clk, posedge rst) begin
     if (rst) q <= 0;
     else q <= d;

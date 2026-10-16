@@ -2,13 +2,12 @@
 2020.2
 Nov 18 2020
 09:47:47
-D:/Project/fpga/ai2/d_ff/d_ff.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sim_1/new/tb_top_button_debounce.v,1792115116,verilog,,,,tb_top_button_debounce,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/D_FF.v,1792045064,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/button_debounce.v,,D_FF,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/button_debounce.v,1792048186,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/clock_80Hz.v,,button_debounce,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/clock_80Hz.v,1792111823,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/led_on_off_500ms.v,,clock_80Hz,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/d_ff.v,1792040845,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sim_1/new/tb_button_debouncing.v,,d_ff,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/led_on_off_500ms.v,1792110360,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/led_toggle.v,,led_on_off_500ms,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/led_toggle.v,1792045689,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/tick_generator.v,,led_toggle,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/tick_generator.v,1792109902,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/top_button_debounce.v,,tick_generator,,,,,,,,
-D:/Project/fpga/ai2/d_ff/d_ff.srcs/sources_1/new/top_button_debounce.v,1792048229,verilog,,D:/Project/fpga/ai2/d_ff/d_ff.srcs/sim_1/new/tb_top_button_debounce.v,,top_button_debounce,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sim_1/new/tb_top_button_debounce.v,1792115116,verilog,,,,tb_top_button_debounce,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/D_FF.v,1792045064,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/button_debounce.v,,D_FF,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/button_debounce.v,1792048186,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/clock_80Hz.v,,button_debounce,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/clock_80Hz.v,1792111823,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/led_on_off_500ms.v,,clock_80Hz,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/led_on_off_500ms.v,1792110360,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/led_toggle.v,,led_on_off_500ms,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/led_toggle.v,1792045689,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/tick_generator.v,,led_toggle,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/tick_generator.v,1792109902,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/top_button_debounce.v,,tick_generator,,,,,,,,
+D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sources_1/new/top_button_debounce.v,1792048229,verilog,,D:/Project/fpga/ai2/10.btn_debounce/d_ff.srcs/sim_1/new/tb_top_button_debounce.v,,top_button_debounce,,,,,,,,

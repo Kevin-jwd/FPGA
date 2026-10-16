@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 16 16:51:47 2026
+# Process ID: 1596
+# Current directory: D:/Project/fpga/ai2/my_up_counter/my_up_counter.runs/synth_1
+# Command line: vivado.exe -log top_up_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_up_counter.tcl
+# Log file: D:/Project/fpga/ai2/my_up_counter/my_up_counter.runs/synth_1/top_up_counter.vds
+# Journal file: D:/Project/fpga/ai2/my_up_counter/my_up_counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_up_counter.tcl -notrace

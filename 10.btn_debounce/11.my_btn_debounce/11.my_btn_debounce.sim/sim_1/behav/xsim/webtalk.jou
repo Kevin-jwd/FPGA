@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 16 14:15:20 2026
+# Process ID: 1908
+# Current directory: D:/Project/fpga/ai2/10.btn_debounce/11.my_btn_debounce/11.my_btn_debounce.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Project/fpga/ai2/10.btn_debounce/11.my_btn_debounce/11.my_btn_debounce.sim/sim_1/behav/xsim/xsim.dir/tb_my_btn_debounce_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Project/fpga/ai2/10.btn_debounce/11.my_btn_debounce/11.my_btn_debounce.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Project/fpga/ai2/10.btn_debounce/11.my_btn_debounce/11.my_btn_debounce.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Project/fpga/ai2/10.btn_debounce/11.my_btn_debounce/11.my_btn_debounce.sim/sim_1/behav/xsim/xsim.dir/tb_my_btn_debounce_behav/webtalk/xsim_webtalk.tcl -notrace

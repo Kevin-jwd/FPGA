@@ -1,7 +1,5 @@
 `timescale 1ns / 1ps
 
-
-
 module tb_top_button_debounce ();
 
   parameter  CLK_FREQ        = 100_000_000;                  // 100MHz
