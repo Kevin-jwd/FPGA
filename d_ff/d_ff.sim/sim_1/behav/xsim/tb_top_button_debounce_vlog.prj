@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../d_ff.srcs/sources_1/new/D_FF.v" \
+"../../../../d_ff.srcs/sources_1/new/button_debounce.v" \
+"../../../../d_ff.srcs/sources_1/new/clock_80Hz.v" \
+"../../../../d_ff.srcs/sources_1/new/led_on_off_500ms.v" \
+"../../../../d_ff.srcs/sources_1/new/led_toggle.v" \
+"../../../../d_ff.srcs/sources_1/new/tick_generator.v" \
+"../../../../d_ff.srcs/sources_1/new/top_button_debounce.v" \
+"../../../../d_ff.srcs/sim_1/new/tb_top_button_debounce.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

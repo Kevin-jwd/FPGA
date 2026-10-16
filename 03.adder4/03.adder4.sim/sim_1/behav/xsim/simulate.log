@@ -1,0 +1,3 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 80 ns : File "D:/Project/fpga/ai2/03.adder4/03.adder4.srcs/sim_1/new/tb_adder8.v" Line 45

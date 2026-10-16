@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 15 16:52:47 2026
+# Process ID: 22912
+# Current directory: D:/Project/fpga/ai2/d_ff/d_ff.runs/impl_1
+# Command line: vivado.exe -log top_button_debounce.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_button_debounce.tcl -notrace
+# Log file: D:/Project/fpga/ai2/d_ff/d_ff.runs/impl_1/top_button_debounce.vdi
+# Journal file: D:/Project/fpga/ai2/d_ff/d_ff.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_button_debounce.tcl -notrace
+Command: open_checkpoint top_button_debounce_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1105.500 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1105.500 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1366.355 ; gain = 8.051
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1366.355 ; gain = 8.051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1366.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.355 ; gain = 260.855
+Command: write_bitstream -force top_button_debounce.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDRC-153] Gated clock check: Net u_button_debounce/u_D_FF1/clean_btn is a gated clock net sourced by a combinational pin u_button_debounce/u_D_FF1/r_toggle_i_2/O, cell u_button_debounce/u_D_FF1/r_toggle_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT u_button_debounce/u_D_FF1/r_toggle_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+u_led_toggle/r_toggle_reg
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 15452672 bits.
+Writing bitstream ./top_button_debounce.bit...
+Writing bitstream ./top_button_debounce.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1854.352 ; gain = 487.996
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 16:53:06 2026...
