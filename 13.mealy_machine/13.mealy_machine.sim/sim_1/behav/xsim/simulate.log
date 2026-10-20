@@ -1,0 +1,12 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+FAIL t=226000 | x=1 | y=0 | expected_val=1
+FAIL t=246000 | x=1 | y=0 | expected_val=1
+FAIL t=276000 | x=1 | y=0 | expected_val=1
+FAILED mealy FSM !!!!!!
+$finish called at time : 276 ns : File "D:/Project/fpga/ai2/13.mealy_machine/13.mealy_machine.srcs/sim_1/imports/new/tb_fsm_moore.v" Line 57
+FAIL t=226000 | x=1 | y=0 | expected_val=1
+FAIL t=246000 | x=1 | y=0 | expected_val=1
+FAIL t=276000 | x=1 | y=0 | expected_val=1
+FAILED mealy FSM !!!!!!
+$finish called at time : 276 ns : File "D:/Project/fpga/ai2/13.mealy_machine/13.mealy_machine.srcs/sim_1/imports/new/tb_fsm_moore.v" Line 57
