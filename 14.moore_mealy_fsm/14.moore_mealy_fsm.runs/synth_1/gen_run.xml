@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1792460381">
+  <File Type="PA-TCL" Name="top_moor_fsm.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_moor_fsm_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_moor_fsm_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_moor_fsm.vds"/>
+  <File Type="RDS-UTIL" Name="top_moor_fsm_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_moor_fsm_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_moor_fsm.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_moor_fsm_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_moor_fsm_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/moor_fsm_101/btn_U1D0_check.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../moor_fsm_101/btn_U1D0_check.v"/>
+        <Attr Name="ImportTime" Val="1792458628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/moor_fsm_101/btn_debounce10ms.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../moor_fsm_101/btn_debounce10ms.v"/>
+        <Attr Name="ImportTime" Val="1792458628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/moor_fsm_101/moor_fsm_101.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../moor_fsm_101/moor_fsm_101.v"/>
+        <Attr Name="ImportTime" Val="1792458628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/moor_fsm_101/top_moor_fsm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../moor_fsm_101/top_moor_fsm.v"/>
+        <Attr Name="ImportTime" Val="1792458628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_moor_fsm"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/moor_fsm_101/Basys3-Master_orginal.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../moor_fsm_101/Basys3-Master_orginal.xdc"/>
+        <Attr Name="ImportTime" Val="1792458628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

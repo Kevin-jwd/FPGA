@@ -1,0 +1,210 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 21 09:55:15 2026
+# Process ID: 22196
+# Current directory: D:/Project/fpga/ai2/11.my_up_counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20860 D:\Project\fpga\ai2\11.my_up_counter\my_up_counter.xpr
+# Log file: D:/Project/fpga/ai2/11.my_up_counter/vivado.log
+# Journal file: D:/Project/fpga/ai2/11.my_up_counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/fpga/ai2/11.my_up_counter/my_up_counter.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project 18.up_down_counter D:/Project/fpga/ai2/18.up_down_counter -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+add_files -norecurse D:/Project/fpga/ai2/17.my_shift_register/17.my_shift_register.srcs/sources_1/imports/sources_1/imports/moor_fsm_101/btn_debounce10ms.v
+import_files -force -norecurse
+import_files -fileset constrs_1 -force -norecurse D:/Project/fpga/doc/BASYS3/digilent-xdc-master/digilent-xdc-master/Basys3-Master_orginal.xdc
+update_compile_order -fileset sources_1
+file mkdir D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/top_up_down_counter.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/top_up_down_counter.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/main_controller.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/main_controller.v
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_controller.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_controller.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/tick_generator.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/tick_generator.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+refresh_design
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_select.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_select.v
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/bin2bcd4digit.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/bin2bcd4digit.v
+close [ open D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_display.v w ]
+add_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_display.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/bin2bcd4digit.v] -no_script -reset -force -quiet
+remove_files  D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/bin2bcd4digit.v
+export_ip_user_files -of_objects  [get_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_display.v] -no_script -reset -force -quiet
+remove_files  D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_display.v
+export_ip_user_files -of_objects  [get_files D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_select.v] -no_script -reset -force -quiet
+remove_files  D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_digit_select.v
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.runs/impl_1/top_up_down_counter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_project
+create_project stopwatch D:/Project/fpga/ai2/stopwatch -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+add_files -norecurse {D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/tick_generator.v D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/imports/moor_fsm_101/btn_debounce10ms.v D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.srcs/sources_1/new/fnd_controller.v}
+import_files -force -norecurse
+import_files -fileset constrs_1 -force -norecurse D:/Project/fpga/doc/BASYS3/digilent-xdc-master/digilent-xdc-master/Basys3-Master_orginal.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/Project/fpga/ai2/stopwatch/stopwatch.srcs/sources_1/new
+close [ open D:/Project/fpga/ai2/stopwatch/stopwatch.srcs/sources_1/new/top_stopwatch.v w ]
+add_files D:/Project/fpga/ai2/stopwatch/stopwatch.srcs/sources_1/new/top_stopwatch.v
+update_compile_order -fileset sources_1

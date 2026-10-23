@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 20 10:40:13 2026
+# Process ID: 20916
+# Current directory: D:/Project/fpga/ai2/14.moore_mealy_fsm/14.moore_mealy_fsm.runs/impl_1
+# Command line: vivado.exe -log top_moor_fsm.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_moor_fsm.tcl -notrace
+# Log file: D:/Project/fpga/ai2/14.moore_mealy_fsm/14.moore_mealy_fsm.runs/impl_1/top_moor_fsm.vdi
+# Journal file: D:/Project/fpga/ai2/14.moore_mealy_fsm/14.moore_mealy_fsm.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_moor_fsm.tcl -notrace

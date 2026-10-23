@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 21 16:49:56 2026
+# Process ID: 22512
+# Current directory: D:/Project/fpga/ai2/11.my_up_counter
+# Command line: wbtcv.exe -mode batch -source D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: D:/Project/fpga/ai2/11.my_up_counter/webtalk.log
+# Journal file: D:/Project/fpga/ai2/11.my_up_counter\webtalk.jou
+#-----------------------------------------------------------
+source D:/Project/fpga/ai2/18.up_down_counter/18.up_down_counter.hw/webtalk/labtool_webtalk.tcl -notrace

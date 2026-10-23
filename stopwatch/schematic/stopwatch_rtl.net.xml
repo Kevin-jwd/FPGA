@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>D:\Project\fpga\ai2\stopwatch\schematic\stopwatch_rtl.kicad_sch</source>
+    <date>2026-10-23T10:01:36</date>
+    <tool>Eeschema 10.0.3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Stopwatch / top_stopwatch RTL</title>
+        <company>Basys3 / XC7A35T-CPG236</company>
+        <rev>1.0</rev>
+        <date>2026-10-22</date>
+        <source>stopwatch_rtl.kicad_sch</source>
+        <comment number="1" value="Verilog RTL documentation - not a PCB manufacturing schematic"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/fnd_controller detail/" tstamps="/574e7a3a-8f34-4c99-8892-2420173803be/">
+      <title_block>
+        <title>fnd_controller detail</title>
+        <company>Basys3 / XC7A35T-CPG236</company>
+        <rev>1.0</rev>
+        <date>2026-10-22</date>
+        <source>fnd_detail.kicad_sch</source>
+        <comment number="1" value="Verilog RTL documentation - not a PCB manufacturing schematic"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/btn_debouncer detail/" tstamps="/fc5908a0-8203-4e65-ae1d-29478622e76e/">
+      <title_block>
+        <title>btn_debouncer detail</title>
+        <company>Basys3 / XC7A35T-CPG236</company>
+        <rev>1.0</rev>
+        <date>2026-10-22</date>
+        <source>debounce_detail.kicad_sch</source>
+        <comment number="1" value="Verilog RTL documentation - not a PCB manufacturing schematic"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/XDC FPGA pin assignment/" tstamps="/d6b2ee08-24c6-4478-8a87-3d0775a959d9/">
+      <title_block>
+        <title>XDC FPGA pin assignment</title>
+        <company>Basys3 / XC7A35T-CPG236</company>
+        <rev>1.0</rev>
+        <date>2026-10-22</date>
+        <source>fpga_pinmap.kicad_sch</source>
+        <comment number="1" value="Verilog RTL documentation - not a PCB manufacturing schematic"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/main_controller behavior/" tstamps="/d00b91a9-ed94-4af4-a591-2f37d7b674dc/">
+      <title_block>
+        <title>main_controller behavior</title>
+        <company>Basys3 / XC7A35T-CPG236</company>
+        <rev>1.0</rev>
+        <date>2026-10-22</date>
+        <source>main_detail.kicad_sch</source>
+        <comment number="1" value="Verilog RTL documentation - not a PCB manufacturing schematic"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>btn_debouncer</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="btn_debouncer" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic/stopwatch_rtl.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74dc248e-06b8-41d2-8f02-0d4f860293ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>tick_generator</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="tick_generator" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic/stopwatch_rtl.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0c89428-6b9f-42e2-9139-867fd6fd34ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>main_controller</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="main_controller" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic/stopwatch_rtl.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>264d84b6-1687-4150-bfee-55c36ebeccd3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>fnd_controller</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="fnd_controller" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic/stopwatch_rtl.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>807852c8-cb54-4c63-9e72-dd67810c3a14</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>fnd_digit_select</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="fnd_digit_select" description=""/>
+      <property name="Sheetname" value="fnd_controller detail"/>
+      <property name="Sheetfile" value="fnd_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/fnd_controller detail/" tstamps="/574e7a3a-8f34-4c99-8892-2420173803be/"/>
+      <tstamps>873f0351-5462-45ab-9bdd-646343533044</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>bin2bcd_4digit</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="bin2bcd_4digit" description=""/>
+      <property name="Sheetname" value="fnd_controller detail"/>
+      <property name="Sheetfile" value="fnd_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/fnd_controller detail/" tstamps="/574e7a3a-8f34-4c99-8892-2420173803be/"/>
+      <tstamps>08fdd86a-e2e5-4922-8835-273027beb9e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>fnd_digit_display</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="fnd_digit_display" description=""/>
+      <property name="Sheetname" value="fnd_controller detail"/>
+      <property name="Sheetfile" value="fnd_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/fnd_controller detail/" tstamps="/574e7a3a-8f34-4c99-8892-2420173803be/"/>
+      <tstamps>b409495e-06ad-41a7-a832-6b6842f7e44f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="10"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>debouncer</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="debouncer" description=""/>
+      <property name="Sheetname" value="btn_debouncer detail"/>
+      <property name="Sheetfile" value="debounce_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/btn_debouncer detail/" tstamps="/fc5908a0-8203-4e65-ae1d-29478622e76e/"/>
+      <tstamps>a9417873-62a0-40bb-8385-61be726a7058</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>debouncer</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="debouncer" description=""/>
+      <property name="Sheetname" value="btn_debouncer detail"/>
+      <property name="Sheetfile" value="debounce_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/btn_debouncer detail/" tstamps="/fc5908a0-8203-4e65-ae1d-29478622e76e/"/>
+      <tstamps>a3081174-1378-426c-8320-5cd9f11b2fa1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>debouncer</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="debouncer" description=""/>
+      <property name="Sheetname" value="btn_debouncer detail"/>
+      <property name="Sheetfile" value="debounce_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/btn_debouncer detail/" tstamps="/fc5908a0-8203-4e65-ae1d-29478622e76e/"/>
+      <tstamps>84611902-7ca2-45f7-b9ed-d3dd61483dfa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>debouncer</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="debouncer" description=""/>
+      <property name="Sheetname" value="btn_debouncer detail"/>
+      <property name="Sheetfile" value="debounce_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/btn_debouncer detail/" tstamps="/fc5908a0-8203-4e65-ae1d-29478622e76e/"/>
+      <tstamps>ca5df548-1fe3-4956-a8dc-14ec91600b45</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>top_stopwatch / FPGA I/O view</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="FPGA_IO" description=""/>
+      <property name="Sheetname" value="XDC FPGA pin assignment"/>
+      <property name="Sheetfile" value="fpga_pinmap.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/XDC FPGA pin assignment/" tstamps="/d6b2ee08-24c6-4478-8a87-3d0775a959d9/"/>
+      <tstamps>942e01db-54e2-46a5-b6f9-75ca1569b72f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="W5"/>
+            <pin num="R2"/>
+            <pin num="W19"/>
+            <pin num="T17"/>
+            <pin num="T18"/>
+            <pin num="U17"/>
+            <pin num="V17"/>
+            <pin num="V16"/>
+            <pin num="W16"/>
+            <pin num="W17"/>
+            <pin num="W15"/>
+            <pin num="V15"/>
+            <pin num="W14"/>
+            <pin num="W13"/>
+            <pin num="U2"/>
+            <pin num="U4"/>
+            <pin num="V4"/>
+            <pin num="W4"/>
+            <pin num="W7"/>
+            <pin num="W6"/>
+            <pin num="U8"/>
+            <pin num="V8"/>
+            <pin num="U5"/>
+            <pin num="V5"/>
+            <pin num="U7"/>
+            <pin num="V7"/>
+            <pin num="U16"/>
+            <pin num="E19"/>
+            <pin num="U19"/>
+            <pin num="V19"/>
+            <pin num="W18"/>
+            <pin num="U15"/>
+            <pin num="U14"/>
+            <pin num="V14"/>
+            <pin num="V13"/>
+            <pin num="V3"/>
+            <pin num="W3"/>
+            <pin num="U3"/>
+            <pin num="P3"/>
+            <pin num="N3"/>
+            <pin num="P1"/>
+            <pin num="L1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>button edge / mode register</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="ButtonEdge" description=""/>
+      <property name="Sheetname" value="main_controller behavior"/>
+      <property name="Sheetfile" value="main_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/main_controller behavior/" tstamps="/d00b91a9-ed94-4af4-a591-2f37d7b674dc/"/>
+      <tstamps>a7a7daa1-5776-4073-8592-a9da9e9f79fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U14">
+      <value>clock counters</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="ClockCounters" description=""/>
+      <property name="Sheetname" value="main_controller behavior"/>
+      <property name="Sheetfile" value="main_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/main_controller behavior/" tstamps="/d00b91a9-ed94-4af4-a591-2f37d7b674dc/"/>
+      <tstamps>3dae906a-a928-4633-b19f-21203dc2b4a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="10"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U15">
+      <value>stopwatch counters</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="StopwatchCounters" description=""/>
+      <property name="Sheetname" value="main_controller behavior"/>
+      <property name="Sheetfile" value="main_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/main_controller behavior/" tstamps="/d00b91a9-ed94-4af4-a591-2f37d7b674dc/"/>
+      <tstamps>852b26ed-e8b4-4fc9-8b41-bc21ead34a53</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="10"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U16">
+      <value>display arithmetic / mux</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RTL" part="DisplayExpression" description=""/>
+      <property name="Sheetname" value="main_controller behavior"/>
+      <property name="Sheetfile" value="main_detail.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/main_controller behavior/" tstamps="/d00b91a9-ed94-4af4-a591-2f37d7b674dc/"/>
+      <tstamps>7a8d9b32-1f6e-48dd-805c-0b3f86d5d38a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RTL" part="ButtonEdge">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">button edge / mode register</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="tick" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="clean_btn[3:0]" type="input"/>
+        <pin num="10" name="r_mode[2:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="ClockCounters">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">clock counters</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="tick" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="10" name="r_min_cnt[6:0]" type="output"/>
+        <pin num="11" name="r_sec_cnt[5:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="DisplayExpression">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">display arithmetic / mux</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="r_mode[2:0]" type="input"/>
+        <pin num="2" name="r_min_cnt[6:0]" type="input"/>
+        <pin num="3" name="r_sec_cnt[5:0]" type="input"/>
+        <pin num="4" name="watch_sec[6:0]" type="input"/>
+        <pin num="5" name="watch_ms[9:0]" type="input"/>
+        <pin num="10" name="seg_data[13:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="FPGA_IO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">top_stopwatch / FPGA I/O view</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="E19" name="led[1]" type="output"/>
+        <pin num="L1" name="led[15]" type="output"/>
+        <pin num="N3" name="led[13]" type="output"/>
+        <pin num="P1" name="led[14]" type="output"/>
+        <pin num="P3" name="led[12]" type="output"/>
+        <pin num="R2" name="rst" type="input"/>
+        <pin num="T17" name="btn[1]" type="input"/>
+        <pin num="T18" name="btn[2]" type="input"/>
+        <pin num="U2" name="an[0]" type="output"/>
+        <pin num="U3" name="led[11]" type="output"/>
+        <pin num="U4" name="an[1]" type="output"/>
+        <pin num="U5" name="seg[4]" type="output"/>
+        <pin num="U7" name="seg[6]" type="output"/>
+        <pin num="U8" name="seg[2]" type="output"/>
+        <pin num="U14" name="led[6]" type="output"/>
+        <pin num="U15" name="led[5]" type="output"/>
+        <pin num="U16" name="led[0]" type="output"/>
+        <pin num="U17" name="btn[3]" type="input"/>
+        <pin num="U19" name="led[2]" type="output"/>
+        <pin num="V3" name="led[9]" type="output"/>
+        <pin num="V4" name="an[2]" type="output"/>
+        <pin num="V5" name="seg[5]" type="output"/>
+        <pin num="V7" name="seg[7]" type="output"/>
+        <pin num="V8" name="seg[3]" type="output"/>
+        <pin num="V13" name="led[8]" type="output"/>
+        <pin num="V14" name="led[7]" type="output"/>
+        <pin num="V15" name="sw[5]" type="input"/>
+        <pin num="V16" name="sw[1]" type="input"/>
+        <pin num="V17" name="sw[0]" type="input"/>
+        <pin num="V19" name="led[3]" type="output"/>
+        <pin num="W3" name="led[10]" type="output"/>
+        <pin num="W4" name="an[3]" type="output"/>
+        <pin num="W5" name="clk" type="input"/>
+        <pin num="W6" name="seg[1]" type="output"/>
+        <pin num="W7" name="seg[0]" type="output"/>
+        <pin num="W13" name="sw[7]" type="input"/>
+        <pin num="W14" name="sw[6]" type="input"/>
+        <pin num="W15" name="sw[4]" type="input"/>
+        <pin num="W16" name="sw[2]" type="input"/>
+        <pin num="W17" name="sw[3]" type="input"/>
+        <pin num="W18" name="led[4]" type="output"/>
+        <pin num="W19" name="btn[0]" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="StopwatchCounters">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">stopwatch counters</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="tick" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="r_mode[2:0]" type="input"/>
+        <pin num="10" name="r_stopwatch_sec_cnt[6:0]" type="output"/>
+        <pin num="11" name="r_stopwatch_ms_cnt[9:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="bin2bcd_4digit">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">bin2bcd_4digit</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="in_data[13:0]" type="input"/>
+        <pin num="10" name="d1[3:0]" type="output"/>
+        <pin num="11" name="d10[3:0]" type="output"/>
+        <pin num="12" name="d100[3:0]" type="output"/>
+        <pin num="13" name="d1000[3:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="btn_debouncer">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">btn_debouncer</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="btn[3:0]" type="input"/>
+        <pin num="10" name="clean_btn[3:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="debouncer">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">debouncer</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="btn" type="input"/>
+        <pin num="10" name="clean_btn" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="fnd_controller">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">fnd_controller</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="tick" type="input"/>
+        <pin num="4" name="in_data[13:0]" type="input"/>
+        <pin num="10" name="an[3:0]" type="output"/>
+        <pin num="11" name="seg[7:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="fnd_digit_display">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">fnd_digit_display</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="tick" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="sel[1:0]" type="input"/>
+        <pin num="4" name="d1[3:0]" type="input"/>
+        <pin num="5" name="d10[3:0]" type="input"/>
+        <pin num="6" name="d100[3:0]" type="input"/>
+        <pin num="7" name="d1000[3:0]" type="input"/>
+        <pin num="10" name="an[3:0]" type="output"/>
+        <pin num="11" name="seg[7:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="fnd_digit_select">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">fnd_digit_select</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="tick" type="input"/>
+        <pin num="10" name="sel[1:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="main_controller">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">main_controller</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="tick" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="3" name="clean_btn[3:0]" type="input"/>
+        <pin num="4" name="sw[7:0]" type="input"/>
+        <pin num="10" name="seg_data[13:0]" type="output"/>
+        <pin num="11" name="led[15:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RTL" part="tick_generator">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">tick_generator</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="rst" type="input"/>
+        <pin num="10" name="tick" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="154" name="/AN[3..0]" class="Default">
+      <node ref="U4" pin="10" pinfunction="an[3:0]_10" pintype="output"/>
+    </net>
+    <net code="155" name="/BTN[3..0]" class="Default">
+      <node ref="U1" pin="3" pinfunction="btn[3:0]_3" pintype="input"/>
+    </net>
+    <net code="156" name="/CLEAN_BTN[3..0]" class="Default">
+      <node ref="U1" pin="10" pinfunction="clean_btn[3:0]_10" pintype="output"/>
+      <node ref="U3" pin="3" pinfunction="clean_btn[3:0]_3" pintype="input"/>
+    </net>
+    <net code="157" name="/CLK" class="Default">
+      <node ref="U1" pin="1" pinfunction="clk_1" pintype="input"/>
+      <node ref="U2" pin="1" pinfunction="clk_1" pintype="input"/>
+      <node ref="U4" pin="1" pinfunction="clk_1" pintype="input"/>
+    </net>
+    <net code="158" name="/LED[15..0]" class="Default">
+      <node ref="U3" pin="11" pinfunction="led[15:0]_11" pintype="output"/>
+    </net>
+    <net code="159" name="/RST" class="Default">
+      <node ref="U1" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U2" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U4" pin="2" pinfunction="rst_2" pintype="input"/>
+    </net>
+    <net code="160" name="/SEG[7..0]" class="Default">
+      <node ref="U4" pin="11" pinfunction="seg[7:0]_11" pintype="output"/>
+    </net>
+    <net code="161" name="/SEG_DATA[13..0]" class="Default">
+      <node ref="U3" pin="10" pinfunction="seg_data[13:0]_10" pintype="output"/>
+      <node ref="U4" pin="4" pinfunction="in_data[13:0]_4" pintype="input"/>
+    </net>
+    <net code="162" name="/SW[7..0]" class="Default">
+      <node ref="U3" pin="4" pinfunction="sw[7:0]_4" pintype="input"/>
+    </net>
+    <net code="163" name="/TICK_1KHZ" class="Default">
+      <node ref="U2" pin="10" pinfunction="tick_10" pintype="output"/>
+      <node ref="U3" pin="1" pinfunction="tick_1" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="tick_3" pintype="input"/>
+    </net>
+    <net code="164" name="/XDC FPGA pin assignment/an[0]" class="Default">
+      <node ref="U12" pin="U2" pinfunction="an[0]_U2" pintype="output"/>
+    </net>
+    <net code="165" name="/XDC FPGA pin assignment/an[1]" class="Default">
+      <node ref="U12" pin="U4" pinfunction="an[1]_U4" pintype="output"/>
+    </net>
+    <net code="166" name="/XDC FPGA pin assignment/an[2]" class="Default">
+      <node ref="U12" pin="V4" pinfunction="an[2]_V4" pintype="output"/>
+    </net>
+    <net code="167" name="/XDC FPGA pin assignment/an[3]" class="Default">
+      <node ref="U12" pin="W4" pinfunction="an[3]_W4" pintype="output"/>
+    </net>
+    <net code="168" name="/XDC FPGA pin assignment/btn[0]" class="Default">
+      <node ref="U12" pin="W19" pinfunction="btn[0]_W19" pintype="input"/>
+    </net>
+    <net code="169" name="/XDC FPGA pin assignment/btn[1]" class="Default">
+      <node ref="U12" pin="T17" pinfunction="btn[1]_T17" pintype="input"/>
+    </net>
+    <net code="170" name="/XDC FPGA pin assignment/btn[2]" class="Default">
+      <node ref="U12" pin="T18" pinfunction="btn[2]_T18" pintype="input"/>
+    </net>
+    <net code="171" name="/XDC FPGA pin assignment/btn[3]" class="Default">
+      <node ref="U12" pin="U17" pinfunction="btn[3]_U17" pintype="input"/>
+    </net>
+    <net code="172" name="/XDC FPGA pin assignment/clk" class="Default">
+      <node ref="U12" pin="W5" pinfunction="clk_W5" pintype="input"/>
+    </net>
+    <net code="173" name="/XDC FPGA pin assignment/led[0]" class="Default">
+      <node ref="U12" pin="U16" pinfunction="led[0]_U16" pintype="output"/>
+    </net>
+    <net code="174" name="/XDC FPGA pin assignment/led[1]" class="Default">
+      <node ref="U12" pin="E19" pinfunction="led[1]_E19" pintype="output"/>
+    </net>
+    <net code="175" name="/XDC FPGA pin assignment/led[2]" class="Default">
+      <node ref="U12" pin="U19" pinfunction="led[2]_U19" pintype="output"/>
+    </net>
+    <net code="176" name="/XDC FPGA pin assignment/led[3]" class="Default">
+      <node ref="U12" pin="V19" pinfunction="led[3]_V19" pintype="output"/>
+    </net>
+    <net code="177" name="/XDC FPGA pin assignment/led[4]" class="Default">
+      <node ref="U12" pin="W18" pinfunction="led[4]_W18" pintype="output"/>
+    </net>
+    <net code="178" name="/XDC FPGA pin assignment/led[5]" class="Default">
+      <node ref="U12" pin="U15" pinfunction="led[5]_U15" pintype="output"/>
+    </net>
+    <net code="179" name="/XDC FPGA pin assignment/led[6]" class="Default">
+      <node ref="U12" pin="U14" pinfunction="led[6]_U14" pintype="output"/>
+    </net>
+    <net code="180" name="/XDC FPGA pin assignment/led[7]" class="Default">
+      <node ref="U12" pin="V14" pinfunction="led[7]_V14" pintype="output"/>
+    </net>
+    <net code="181" name="/XDC FPGA pin assignment/led[8]" class="Default">
+      <node ref="U12" pin="V13" pinfunction="led[8]_V13" pintype="output"/>
+    </net>
+    <net code="182" name="/XDC FPGA pin assignment/led[9]" class="Default">
+      <node ref="U12" pin="V3" pinfunction="led[9]_V3" pintype="output"/>
+    </net>
+    <net code="183" name="/XDC FPGA pin assignment/led[10]" class="Default">
+      <node ref="U12" pin="W3" pinfunction="led[10]_W3" pintype="output"/>
+    </net>
+    <net code="184" name="/XDC FPGA pin assignment/led[11]" class="Default">
+      <node ref="U12" pin="U3" pinfunction="led[11]_U3" pintype="output"/>
+    </net>
+    <net code="185" name="/XDC FPGA pin assignment/led[12]" class="Default">
+      <node ref="U12" pin="P3" pinfunction="led[12]_P3" pintype="output"/>
+    </net>
+    <net code="186" name="/XDC FPGA pin assignment/led[13]" class="Default">
+      <node ref="U12" pin="N3" pinfunction="led[13]_N3" pintype="output"/>
+    </net>
+    <net code="187" name="/XDC FPGA pin assignment/led[14]" class="Default">
+      <node ref="U12" pin="P1" pinfunction="led[14]_P1" pintype="output"/>
+    </net>
+    <net code="188" name="/XDC FPGA pin assignment/led[15]" class="Default">
+      <node ref="U12" pin="L1" pinfunction="led[15]_L1" pintype="output"/>
+    </net>
+    <net code="189" name="/XDC FPGA pin assignment/rst" class="Default">
+      <node ref="U12" pin="R2" pinfunction="rst_R2" pintype="input"/>
+    </net>
+    <net code="190" name="/XDC FPGA pin assignment/seg[0]" class="Default">
+      <node ref="U12" pin="W7" pinfunction="seg[0]_W7" pintype="output"/>
+    </net>
+    <net code="191" name="/XDC FPGA pin assignment/seg[1]" class="Default">
+      <node ref="U12" pin="W6" pinfunction="seg[1]_W6" pintype="output"/>
+    </net>
+    <net code="192" name="/XDC FPGA pin assignment/seg[2]" class="Default">
+      <node ref="U12" pin="U8" pinfunction="seg[2]_U8" pintype="output"/>
+    </net>
+    <net code="193" name="/XDC FPGA pin assignment/seg[3]" class="Default">
+      <node ref="U12" pin="V8" pinfunction="seg[3]_V8" pintype="output"/>
+    </net>
+    <net code="194" name="/XDC FPGA pin assignment/seg[4]" class="Default">
+      <node ref="U12" pin="U5" pinfunction="seg[4]_U5" pintype="output"/>
+    </net>
+    <net code="195" name="/XDC FPGA pin assignment/seg[5]" class="Default">
+      <node ref="U12" pin="V5" pinfunction="seg[5]_V5" pintype="output"/>
+    </net>
+    <net code="196" name="/XDC FPGA pin assignment/seg[6]" class="Default">
+      <node ref="U12" pin="U7" pinfunction="seg[6]_U7" pintype="output"/>
+    </net>
+    <net code="197" name="/XDC FPGA pin assignment/seg[7]" class="Default">
+      <node ref="U12" pin="V7" pinfunction="seg[7]_V7" pintype="output"/>
+    </net>
+    <net code="198" name="/XDC FPGA pin assignment/sw[0]" class="Default">
+      <node ref="U12" pin="V17" pinfunction="sw[0]_V17" pintype="input"/>
+    </net>
+    <net code="199" name="/XDC FPGA pin assignment/sw[1]" class="Default">
+      <node ref="U12" pin="V16" pinfunction="sw[1]_V16" pintype="input"/>
+    </net>
+    <net code="200" name="/XDC FPGA pin assignment/sw[2]" class="Default">
+      <node ref="U12" pin="W16" pinfunction="sw[2]_W16" pintype="input"/>
+    </net>
+    <net code="201" name="/XDC FPGA pin assignment/sw[3]" class="Default">
+      <node ref="U12" pin="W17" pinfunction="sw[3]_W17" pintype="input"/>
+    </net>
+    <net code="202" name="/XDC FPGA pin assignment/sw[4]" class="Default">
+      <node ref="U12" pin="W15" pinfunction="sw[4]_W15" pintype="input"/>
+    </net>
+    <net code="203" name="/XDC FPGA pin assignment/sw[5]" class="Default">
+      <node ref="U12" pin="V15" pinfunction="sw[5]_V15" pintype="input"/>
+    </net>
+    <net code="204" name="/XDC FPGA pin assignment/sw[6]" class="Default">
+      <node ref="U12" pin="W14" pinfunction="sw[6]_W14" pintype="input"/>
+    </net>
+    <net code="205" name="/XDC FPGA pin assignment/sw[7]" class="Default">
+      <node ref="U12" pin="W13" pinfunction="sw[7]_W13" pintype="input"/>
+    </net>
+    <net code="206" name="/btn_debouncer detail/BTN[0]" class="Default">
+      <node ref="U8" pin="3" pinfunction="btn_3" pintype="input"/>
+    </net>
+    <net code="207" name="/btn_debouncer detail/BTN[1]" class="Default">
+      <node ref="U9" pin="3" pinfunction="btn_3" pintype="input"/>
+    </net>
+    <net code="208" name="/btn_debouncer detail/BTN[2]" class="Default">
+      <node ref="U10" pin="3" pinfunction="btn_3" pintype="input"/>
+    </net>
+    <net code="209" name="/btn_debouncer detail/BTN[3]" class="Default">
+      <node ref="U11" pin="3" pinfunction="btn_3" pintype="input"/>
+    </net>
+    <net code="210" name="/btn_debouncer detail/CLEAN_BTN[0]" class="Default">
+      <node ref="U8" pin="10" pinfunction="clean_btn_10" pintype="output"/>
+    </net>
+    <net code="211" name="/btn_debouncer detail/CLEAN_BTN[1]" class="Default">
+      <node ref="U9" pin="10" pinfunction="clean_btn_10" pintype="output"/>
+    </net>
+    <net code="212" name="/btn_debouncer detail/CLEAN_BTN[2]" class="Default">
+      <node ref="U10" pin="10" pinfunction="clean_btn_10" pintype="output"/>
+    </net>
+    <net code="213" name="/btn_debouncer detail/CLEAN_BTN[3]" class="Default">
+      <node ref="U11" pin="10" pinfunction="clean_btn_10" pintype="output"/>
+    </net>
+    <net code="214" name="/btn_debouncer detail/CLK" class="Default">
+      <node ref="U10" pin="1" pinfunction="clk_1" pintype="input"/>
+      <node ref="U11" pin="1" pinfunction="clk_1" pintype="input"/>
+      <node ref="U8" pin="1" pinfunction="clk_1" pintype="input"/>
+      <node ref="U9" pin="1" pinfunction="clk_1" pintype="input"/>
+    </net>
+    <net code="215" name="/btn_debouncer detail/RST" class="Default">
+      <node ref="U10" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U11" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U8" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U9" pin="2" pinfunction="rst_2" pintype="input"/>
+    </net>
+    <net code="216" name="/fnd_controller detail/AN[3..0]" class="Default">
+      <node ref="U7" pin="10" pinfunction="an[3:0]_10" pintype="output"/>
+    </net>
+    <net code="217" name="/fnd_controller detail/CLK" class="Default">
+      <node ref="U5" pin="1" pinfunction="clk_1" pintype="input"/>
+    </net>
+    <net code="218" name="/fnd_controller detail/D1[3..0]" class="Default">
+      <node ref="U6" pin="10" pinfunction="d1[3:0]_10" pintype="output"/>
+      <node ref="U7" pin="4" pinfunction="d1[3:0]_4" pintype="input"/>
+    </net>
+    <net code="219" name="/fnd_controller detail/D10[3..0]" class="Default">
+      <node ref="U6" pin="11" pinfunction="d10[3:0]_11" pintype="output"/>
+      <node ref="U7" pin="5" pinfunction="d10[3:0]_5" pintype="input"/>
+    </net>
+    <net code="220" name="/fnd_controller detail/D100[3..0]" class="Default">
+      <node ref="U6" pin="12" pinfunction="d100[3:0]_12" pintype="output"/>
+      <node ref="U7" pin="6" pinfunction="d100[3:0]_6" pintype="input"/>
+    </net>
+    <net code="221" name="/fnd_controller detail/D1000[3..0]" class="Default">
+      <node ref="U6" pin="13" pinfunction="d1000[3:0]_13" pintype="output"/>
+      <node ref="U7" pin="7" pinfunction="d1000[3:0]_7" pintype="input"/>
+    </net>
+    <net code="222" name="/fnd_controller detail/RST" class="Default">
+      <node ref="U5" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U7" pin="2" pinfunction="rst_2" pintype="input"/>
+    </net>
+    <net code="223" name="/fnd_controller detail/SEG[7..0]" class="Default">
+      <node ref="U7" pin="11" pinfunction="seg[7:0]_11" pintype="output"/>
+    </net>
+    <net code="224" name="/fnd_controller detail/SEG_DATA[13..0]" class="Default">
+      <node ref="U6" pin="1" pinfunction="in_data[13:0]_1" pintype="input"/>
+    </net>
+    <net code="225" name="/fnd_controller detail/SEL[1..0]" class="Default">
+      <node ref="U5" pin="10" pinfunction="sel[1:0]_10" pintype="output"/>
+      <node ref="U7" pin="3" pinfunction="sel[1:0]_3" pintype="input"/>
+    </net>
+    <net code="226" name="/fnd_controller detail/TICK_1KHZ" class="Default">
+      <node ref="U5" pin="3" pinfunction="tick_3" pintype="input"/>
+      <node ref="U7" pin="1" pinfunction="tick_1" pintype="input"/>
+    </net>
+    <net code="227" name="/main_controller behavior/CLEAN_BTN[3..0]" class="Default">
+      <node ref="U13" pin="3" pinfunction="clean_btn[3:0]_3" pintype="input"/>
+    </net>
+    <net code="228" name="/main_controller behavior/MIN[6..0]" class="Default">
+      <node ref="U14" pin="10" pinfunction="r_min_cnt[6:0]_10" pintype="output"/>
+      <node ref="U16" pin="2" pinfunction="r_min_cnt[6:0]_2" pintype="input"/>
+    </net>
+    <net code="229" name="/main_controller behavior/MODE[2..0]" class="Default">
+      <node ref="U13" pin="10" pinfunction="r_mode[2:0]_10" pintype="output"/>
+      <node ref="U15" pin="3" pinfunction="r_mode[2:0]_3" pintype="input"/>
+      <node ref="U16" pin="1" pinfunction="r_mode[2:0]_1" pintype="input"/>
+    </net>
+    <net code="230" name="/main_controller behavior/RST" class="Default">
+      <node ref="U13" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U14" pin="2" pinfunction="rst_2" pintype="input"/>
+      <node ref="U15" pin="2" pinfunction="rst_2" pintype="input"/>
+    </net>
+    <net code="231" name="/main_controller behavior/SEC[5..0]" class="Default">
+      <node ref="U14" pin="11" pinfunction="r_sec_cnt[5:0]_11" pintype="output"/>
+      <node ref="U16" pin="3" pinfunction="r_sec_cnt[5:0]_3" pintype="input"/>
+    </net>
+    <net code="232" name="/main_controller behavior/SEG_DATA[13..0]" class="Default">
+      <node ref="U16" pin="10" pinfunction="seg_data[13:0]_10" pintype="output"/>
+    </net>
+    <net code="233" name="/main_controller behavior/TICK_1KHZ" class="Default">
+      <node ref="U13" pin="1" pinfunction="tick_1" pintype="input"/>
+      <node ref="U14" pin="1" pinfunction="tick_1" pintype="input"/>
+      <node ref="U15" pin="1" pinfunction="tick_1" pintype="input"/>
+    </net>
+    <net code="234" name="/main_controller behavior/WATCH_MS[9..0]" class="Default">
+      <node ref="U15" pin="11" pinfunction="r_stopwatch_ms_cnt[9:0]_11" pintype="output"/>
+      <node ref="U16" pin="5" pinfunction="watch_ms[9:0]_5" pintype="input"/>
+    </net>
+    <net code="235" name="/main_controller behavior/WATCH_SEC[6..0]" class="Default">
+      <node ref="U15" pin="10" pinfunction="r_stopwatch_sec_cnt[6:0]_10" pintype="output"/>
+      <node ref="U16" pin="4" pinfunction="watch_sec[6:0]_4" pintype="input"/>
+    </net>
+  </nets>
+</export>

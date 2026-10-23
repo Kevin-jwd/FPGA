@@ -1,9 +1,0 @@
-0.7
-2020.2
-Nov 18 2020
-09:47:47
-D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sim_1/new/tb_fsm_moore.v,1792378625,verilog,,,,tb_fsm_moore,,,,,,,,
-D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sources_1/imports/Downloads/btn_debounce_10ms.v,1792370345,verilog,,D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sources_1/new/my_fsm_moore.v,,debouncer,,,,,,,,
-D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sources_1/new/my_fsm_moore.v,1792382881,verilog,,D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sources_1/new/top_fsm_moore.v,,my_fsm_moore,,,,,,,,
-D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sources_1/new/top_fsm_moore.v,1792383119,verilog,,D:/Project/fpga/ai2/12.sequential_moore_machine/12.sequential_moore_machine.srcs/sim_1/new/tb_fsm_moore.v,,top_fsm_moore,,,,,,,,
