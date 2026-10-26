@@ -17,12 +17,12 @@ module pwm_duty_control (
   reg [3:0] r_pwm_counter = 4'd0;
   reg r_prev_duty_inc = 1'b0;
   reg r_prev_duty_dec = 1'b0;
-  reg r_prev_duty_stop = 1'b0;
+  reg r_prev_stop = 1'b0;
 
   // 1. btnU btnD rising edge 검출 
   wire w_duty_inc = (clean_btn[0] && !r_prev_duty_inc);  // rising edge 검출
   wire w_duty_dec = (clean_btn[1] && !r_prev_duty_dec);  // rising edge 검출
-  wire w_stop = (clean_btn[2] && !r_prev_duty_stop);
+  wire w_stop = (clean_btn[2] && !r_prev_stop);
 
   // 2. duty cycle 제어 (btnU btnD)
   always @(posedge clk, posedge reset) begin
@@ -30,10 +30,11 @@ module pwm_duty_control (
       r_duty_cycle <= 4'd5;
       r_prev_duty_inc <= 0;
       r_prev_duty_dec <= 0;
+      r_prev_stop <= 0;
     end else begin
-      r_prev_duty_inc  <= clean_btn[0];  // 버튼 이전 상태 저장 
-      r_prev_duty_dec  <= clean_btn[1];
-      r_prev_duty_stop <= clean_btn[2];
+      r_prev_duty_inc <= clean_btn[0];  // 버튼 이전 상태 저장 
+      r_prev_duty_dec <= clean_btn[1];
+      r_prev_stop <= clean_btn[2];
       if (w_stop) r_duty_cycle <= 0;
       if (w_duty_inc && r_duty_cycle < 4'd9) r_duty_cycle <= r_duty_cycle + 1;
       if (w_duty_dec && r_duty_cycle >= 4'd1) r_duty_cycle <= r_duty_cycle - 1;

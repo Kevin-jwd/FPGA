@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Oct 26 13:16:29 2026
+| Date         : Mon Oct 26 14:44:55 2026
 | Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     9 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    51 |
+| Unused register locations in slices containing registers |    43 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -43,8 +43,8 @@ Table of Contents
 | >= 0 to < 4        |     4 |
 | >= 4 to < 6        |     2 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
-| >= 10 to < 12      |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     1 |
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              10 |            5 |
-| No           | No                    | Yes                    |              86 |           32 |
+| No           | No                    | No                     |               8 |            1 |
+| No           | No                    | Yes                    |              88 |           35 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              14 |            5 |
-| Yes          | No                    | Yes                    |               7 |            4 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |              17 |            7 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,18 +70,18 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------+----------------------------------------------+------------------+------------------+----------------+--------------+
-|       Clock Signal       |                 Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+--------------------------+----------------------------------------------+------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG           | u_btn_debouncer/u_btnC_debouncer/r_btn_state | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG           | u_btn_debouncer/u_btnL_debouncer/r_btn_state | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG           | u_btn_debouncer/u_btnR_debouncer/r_btn_state | reset_IBUF       |                1 |              1 |         1.00 |
-|  u_tick_generator/w_tick |                                              | reset_IBUF       |                1 |              2 |         2.00 |
-|  clk_IBUF_BUFG           | u_fnd_controller/u_fnd_digit_select/E[0]     |                  |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG           | u_pwm_duty_control/r_duty_cycle[3]_i_1_n_0   | reset_IBUF       |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG           |                                              |                  |                5 |             10 |         2.00 |
-|  clk_IBUF_BUFG           | u_tick_generator/w_tick                      |                  |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG           |                                              | reset_IBUF       |               31 |             84 |         2.71 |
-+--------------------------+----------------------------------------------+------------------+------------------+----------------+--------------+
++------------------------+-----------------------------------------------------+------------------+------------------+----------------+--------------+
+|      Clock Signal      |                    Enable Signal                    | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+-----------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG         | u_btn_debouncer/u_btnC_debouncer/r_btn_state        | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | u_btn_debouncer/u_btnL_debouncer/r_btn_state        | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | u_btn_debouncer/u_btnR_debouncer/r_btn_state        | reset_IBUF       |                1 |              1 |         1.00 |
+|  u_tick_generator/E[0] |                                                     | reset_IBUF       |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG         | u_fnd_controller/u_fnd_digit_select/sel_reg[0]_0[0] |                  |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG         | u_pwm_duty_control/r_duty_cycle[3]_i_1_n_0          | reset_IBUF       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG         |                                                     |                  |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG         | u_tick_generator/E[0]                               | reset_IBUF       |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG         |                                                     | reset_IBUF       |               33 |             86 |         2.61 |
++------------------------+-----------------------------------------------------+------------------+------------------+----------------+--------------+
 
 

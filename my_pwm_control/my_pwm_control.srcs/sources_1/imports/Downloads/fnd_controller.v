@@ -29,7 +29,7 @@ module fnd_controller (
 
   fnd_digit_display u_fnd_digit_display (
       .clk(clk),
-      .rst(rst),
+      .reset(reset),
       .tick(tick),
       .sel(w_sel),  // 00 01 10 11 : 1ms 마다 바뀜
       .motor_direction(motor_direction),
@@ -78,7 +78,7 @@ endmodule
 
 module fnd_digit_display (
     input clk,
-    input rst,
+    input reset,
     input tick,
     input [1:0] sel,  // 00 01 10 11 : 1ms 마다 바뀜
     input [3:0] d1,
@@ -93,8 +93,8 @@ module fnd_digit_display (
   reg [$clog2(1000)-1:0] r_1s_cnt = 0;
   reg toggle_dir = 1'b0;
 
-  always @(posedge clk, posedge rst) begin  // 1ms 마다 들어옴
-    if (rst) begin
+  always @(posedge clk, posedge reset) begin  // 1ms 마다 들어옴
+    if (reset) begin
       r_1s_cnt   <= 10'd0;
       toggle_dir <= 1'b0;
     end else if (tick) begin
